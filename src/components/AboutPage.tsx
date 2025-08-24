@@ -8,11 +8,11 @@ interface AboutPageProps {
 
 const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
   const stats = [
-    { name: 'PROBLEM SOLVING', value: 95, color: '#00ffff' },
-    { name: 'CODING SKILLS', value: 90, color: '#ff0080' },
+    { name: 'PROBLEM SOLVING', value: 95, color: '#fcee0a' },
+    { name: 'CODING SKILLS', value: 90, color: '#00ffff' },
     { name: 'CREATIVITY', value: 85, color: '#00ff00' },
-    { name: 'TECH MASTERY', value: 88, color: '#ffff00' },
-    { name: 'COMMUNICATION', value: 82, color: '#ff8000' },
+    { name: 'TECH MASTERY', value: 88, color: '#ff6b00' },
+    { name: 'COMMUNICATION', value: 82, color: '#b300ff' },
   ];
 
   return (

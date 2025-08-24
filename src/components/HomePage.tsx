@@ -10,32 +10,32 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
   useEffect(() => {
     const glitchInterval = setInterval(() => {
-      setGlitchText('H4R1 PR4S4D');
-      setTimeout(() => setGlitchText('HARI PRASAD'), 100);
-    }, 5000);
+      setGlitchText('H4R1_PR4S4D');
+      setTimeout(() => setGlitchText('HARI PRASAD'), 150);
+    }, 4000);
 
     return () => clearInterval(glitchInterval);
   }, []);
 
   const menuItems = [
-    { label: 'START GAME', sublabel: 'Projects', page: 'projects' as PageType },
-    { label: 'CHARACTER', sublabel: 'About Me', page: 'about' as PageType },
-    { label: 'INVENTORY', sublabel: 'Skills', page: 'skills' as PageType },
-    { label: 'JOURNAL', sublabel: 'Hobbies', page: 'hobbies' as PageType },
-    { label: 'NETWORK', sublabel: 'Contact', page: 'contact' as PageType },
+    { label: 'PROJECTS', sublabel: 'View Portfolio', page: 'projects' as PageType, icon: '⚡' },
+    { label: 'CHARACTER', sublabel: 'About Me', page: 'about' as PageType, icon: '👤' },
+    { label: 'INVENTORY', sublabel: 'Skills & Tech', page: 'skills' as PageType, icon: '🎒' },
+    { label: 'JOURNAL', sublabel: 'Interests', page: 'hobbies' as PageType, icon: '📓' },
+    { label: 'CONTACT', sublabel: 'Get In Touch', page: 'contact' as PageType, icon: '📡' },
   ];
 
   return (
     <div className="home-page">
       <div className="city-background"></div>
-      <div className="rain-effect"></div>
+      <div className="scan-lines"></div>
       
       <div className="main-content">
         <div className="player-name">
           <h1 className={`glitch-text ${glitchText !== 'HARI PRASAD' ? 'glitching' : ''}`}>
             {glitchText}
           </h1>
-          <div className="subtitle">NETRUNNER • FULL STACK DEVELOPER</div>
+          <div className="subtitle">FULL STACK DEVELOPER • NETRUNNER</div>
         </div>
 
         <div className="main-menu">
@@ -46,7 +46,7 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               onClick={() => onNavigate(item.page)}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <span className="menu-icon">▶</span>
+              <span className="menu-icon">{item.icon}</span>
               <div className="menu-text">
                 <span className="menu-label">{item.label}</span>
                 <span className="menu-sublabel">{item.sublabel}</span>
@@ -59,12 +59,12 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
       <div className="hud-elements">
         <div className="top-left-hud">
-          <div className="hud-line">NEURAL LINK: ACTIVE</div>
-          <div className="hud-line">SYNC: 100%</div>
+          <div className="hud-line">SYSTEM: ONLINE</div>
+          <div className="hud-line">STATUS: READY</div>
         </div>
         <div className="top-right-hud">
-          <div className="hud-line">NIGHT CITY</div>
-          <div className="hud-line">2077.12.10</div>
+          <div className="hud-line">LOCATION: DIGITAL</div>
+          <div className="hud-line">VERSION: 2.0</div>
         </div>
       </div>
     </div>

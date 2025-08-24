@@ -18,11 +18,11 @@ const HobbiesPage: React.FC<HobbiesPageProps> = ({ onNavigate }) => {
       subtitle: 'Audio Enhancement Protocols',
       items: [
         {
-          name: 'Cyberpunk 2077 OST',
-          type: 'Synthwave Collection',
-          description: 'Complete soundtrack from Night City\'s underground scene',
+          name: 'Synthwave & Cyberpunk OST',
+          type: 'Electronic Music',
+          description: 'Futuristic electronic music perfect for coding sessions',
           status: 'Currently Playing',
-          details: 'Features tracks from Samurai, including "Never Fade Away" and "Chippin\' In"'
+          details: 'High-energy electronic beats that enhance focus and creativity during development'
         },
         {
           name: 'Synthwave Essentials',

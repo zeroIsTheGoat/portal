@@ -12,38 +12,38 @@ const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
   const projects = [
     {
       id: 1,
-      name: 'NEURAL MARKET INTERFACE',
-      type: 'E-COMMERCE GIGS',
-      description: 'Advanced marketplace with real-time inventory tracking and quantum encryption',
+      name: 'E-COMMERCE PLATFORM',
+      type: 'WEB APPLICATION',
+      description: 'Full-stack marketplace with real-time inventory and secure payment processing',
       rewards: ['React', 'Node.js', 'MongoDB', 'WebSocket'],
       status: 'COMPLETED',
       difficulty: 'LEGENDARY',
       completion: 100,
-      details: 'Built a comprehensive e-commerce platform with advanced features including real-time inventory management, secure payment processing, and AI-powered recommendations.',
+      details: 'Developed a comprehensive e-commerce platform with advanced features including real-time inventory management, secure payment processing, and AI-powered product recommendations.',
       images: ['https://images.pexels.com/photos/5380664/pexels-photo-5380664.jpeg']
     },
     {
       id: 2,
-      name: 'CRYPTO VAULT SECURITY',
-      type: 'FINTECH OPERATIONS',
-      description: 'Blockchain-based secure wallet with military-grade encryption protocols',
+      name: 'CRYPTOCURRENCY WALLET',
+      type: 'BLOCKCHAIN APP',
+      description: 'Secure digital wallet with multi-signature support and DeFi integration',
       rewards: ['Solidity', 'Web3.js', 'React', 'Express'],
       status: 'COMPLETED',
       difficulty: 'EPIC',
       completion: 100,
-      details: 'Developed a secure cryptocurrency wallet application with advanced security features, multi-signature support, and seamless DeFi integration.',
+      details: 'Built a secure cryptocurrency wallet with advanced security features, multi-signature support, and seamless DeFi protocol integration.',
       images: ['https://images.pexels.com/photos/8369648/pexels-photo-8369648.jpeg']
     },
     {
       id: 3,
-      name: 'AI COMPANION CHATBOT',
-      type: 'NEURAL NETWORK',
-      description: 'Intelligent conversational AI with natural language processing capabilities',
+      name: 'AI CHATBOT SYSTEM',
+      type: 'MACHINE LEARNING',
+      description: 'Intelligent conversational AI with advanced NLP and learning capabilities',
       rewards: ['Python', 'TensorFlow', 'FastAPI', 'React'],
       status: 'IN PROGRESS',
       difficulty: 'LEGENDARY',
       completion: 75,
-      details: 'Currently developing an advanced AI chatbot with machine learning capabilities for natural conversation and task automation.',
+      details: 'Developing an advanced AI chatbot system with machine learning capabilities for natural conversation, context awareness, and intelligent task automation.',
       images: ['https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg']
     }
   ];

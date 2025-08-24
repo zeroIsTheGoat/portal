@@ -63,9 +63,9 @@ const SkillsPage: React.FC<SkillsPageProps> = ({ onNavigate }) => {
 
   const getRarityColor = (rarity: string) => {
     switch (rarity) {
-      case 'legendary': return '#ff6b00';
+      case 'legendary': return '#fcee0a';
       case 'epic': return '#b300ff';
-      case 'rare': return '#0080ff';
+      case 'rare': return '#00ffff';
       default: return '#00ff00';
     }
   };

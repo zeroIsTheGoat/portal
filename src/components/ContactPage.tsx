@@ -22,7 +22,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
     setTimeout(() => {
       setIsTransmitting(false);
       setFormData({ name: '', email: '', message: '' });
-      alert('Message transmitted successfully! Neural link established.');
+      alert('TRANSMISSION COMPLETE - Message sent successfully!');
     }, 2000);
   };
 
